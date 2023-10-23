@@ -1,2 +1,18 @@
-@import './common';
-@import './example';
+@import './variables';
+
+// base
+@import './base';
+@import './modal';
+@import './buttons';
+@import './titles';
+@import './main__svgs';
+
+// index
+@import './header';
+@import './hero';
+@import './sensation';
+@import './products';
+@import './sellers';
+@import './reviews';
+@import './subscribe';
+@import './footer';

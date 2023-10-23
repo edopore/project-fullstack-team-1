@@ -1,0 +1,24 @@
+.hero__background {
+  background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
+    url(../images/footer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  gap: 24px;
+  padding: 72px 368px;
+}
+.title__dimention {
+  width: 378px;
+}
+.text__dimention {
+  text-align: center;
+  margin-bottom: 5px;
+}
