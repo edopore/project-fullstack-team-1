@@ -1,0 +1,75 @@
+.benefits {
+  background-color: $bg-black;
+  color: $white;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @media screen and (min-width: 768px) {
+      gap: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 70px;
+      justify-content: center;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-right: 28px;
+
+    @media screen and (min-width: 1200px) {
+      padding-right: 18px;
+      &::after {
+        content: '';
+        width: 1px;
+        height: 124px;
+        background-color: $white-o50;
+        position: absolute;
+        right: -1px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:last-child {
+        padding-right: 0;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 1px solid $white-o50;
+  }
+  &__title {
+    margin: 22px 0 18px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  &__description {
+    width: 308px;
+    color: $white-o70;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+}
