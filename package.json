@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://edopore.github.io/project-fullstack-equipo1",
+  "homepage": "https://edopore.github.io/project-fullstack-team-1",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /project-fullstack-equipo1/"
+    "build": "parcel build src/*.html --public-url /project-fullstack-team-1/"
   },
   "repository": {
     "type": "git",
