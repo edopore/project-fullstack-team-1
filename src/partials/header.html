@@ -1,14 +1,86 @@
 <nav class="nav-bar">
-  <h2 class="nav-bar__logo">SIMPLY CHOCOLATE</h2>
-  <ul class="nav-bar__menu">
-    <li class="menu__link">Home</li>
-    <li class="menu__link">How it's made</li>
-    <li class="menu__link">Our products</li>
-    <li class="menu__link">Top Sellers</li>
-    <li class="menu__link">Chocolate is loved</li>
-  </ul>
-  <ul class="nav-bar__social">
-    <li class="social__link">Instagram</li>
-    <li class="social__link">Twitter</li>
-  </ul>
+  <div class="nav-bar__div">
+    <div class="nav-bar__div1">
+      <a class="nav-bar__title" href="#"
+        >SIMPLY <span class="nav-bar__title--normal"> CHOCOLATE</span>
+        <svg class="nav-bar__logo" width="24" height="24">
+          <use href="./images/symbol-defs.svg#icon-chocolate"></use>
+        </svg>
+      </a>
+    </div>
+
+    <ul class="nav-bar__menu list">
+      <li class="menu__item">
+        <a href="#" class="menul__link" rel="noopener noreffer" target="_blank"
+          >Home</a
+        >
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menul__link" rel="noopener noreffer" target="_blank"
+          >How it's made</a
+        >
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menul__link" rel="noopener noreffer" target="_blank"
+          >Our products</a
+        >
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menul__link" rel="noopener noreffer" target="_blank"
+          >Top Sellers</a
+        >
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menul__link" rel="noopener noreffer" target="_blank"
+          >Chocolate is loved</a
+        >
+      </li>
+    </ul>
+
+    <ul class="nav-bar__social list">
+      <li class="social__list">
+        <a
+          href="#"
+          class="social__link"
+          rel="noopener noreffer"
+          target="_blank"
+        >
+          <svg class="social__logo" width="20" height="20">
+            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__list">
+        <a
+          href="#"
+          class="social__link"
+          rel="noopener noreffer"
+          target="_blank"
+        >
+          <svg class="social__logo" width="20" height="20">
+            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <button
+    class="menu-toggle js-open-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+  >
+    <svg
+      width="24"
+      height="24"
+      fill="currentColor"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+  </button>
 </nav>
