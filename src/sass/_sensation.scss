@@ -1,41 +1,30 @@
 .sensation {
-  padding: 72px 0px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
   &__title {
-    text-align: center;
     width: 283px;
-    font-size: 20px;
-    font-weight: 800;
     line-height: 24px;
-    letter-spacing: -0.03em;
-    color: $black;
     @media screen and (min-width: 768px) {
-      width: 350px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 350px;
+      width: 411px;
     }
   }
   &__text {
+    width: 100%;
     text-align: center;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.02em;
     color: $black;
-    padding-top: 28px;
+    padding-top: 24px;
     @media screen and (min-width: 768px) {
       width: 486px;
-    }
-    @media screen and (min-width: 1200px) {
+      padding-top: 28px;
     }
   }
-}
-
-.taste {
-  color: $accent;
 }
 
 .card {
@@ -43,12 +32,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding-top: 50px;
+    padding-top: 32px;
     @media screen and (min-width: 768px) {
       gap: 32px;
+      padding-top: 50px;
     }
     @media screen and (min-width: 1200px) {
-      gap: 19px;
+      gap: 18px;
     }
   }
   &__container {
@@ -62,6 +52,13 @@
     }
     @media screen and (min-width: 1200px) {
       width: 270px;
+    }
+
+    &:hover .info__card,
+    &:focus .info__card,
+    &:focus-visible .info__card,
+    &:focus-within .info__card {
+      transform: translateY(-100%);
     }
   }
   &__item {
@@ -112,19 +109,22 @@
   }
 }
 
-.card__container:hover .info__card {
-  transform: translateY(-100%);
-}
-
-// ventana info
-
 .info {
   &__card {
+    position: absolute;
+    width: 335px;
+    height: 270px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     text-align: left;
-    position: absolute;
     transition: transform 250ms ease;
+    @media screen and (min-width: 768px) {
+      width: 336px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
   &__title {
     font-size: 18px;
@@ -144,5 +144,6 @@
     font-weight: 400;
     line-height: 1.28;
     letter-spacing: -0.02em;
+    overflow: hidden;
   }
 }
