@@ -1,4 +1,7 @@
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   padding: 12px 28px;
   color: $white;
@@ -44,7 +47,6 @@
     &:focus-visible,
     &:focus-within {
       color: $white;
-      border: none;
       background-color: $accent;
     }
 

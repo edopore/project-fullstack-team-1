@@ -1,14 +1,16 @@
 .reviews {
   &__list {
     display: flex;
-    overflow: hidden;
-    margin-top: 32px;
-    margin-bottom: 20px;
+    overflow: scroll;
+    margin: 32px auto 20px;
+    column-gap: 16px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     @media screen and (min-width: 768px) {
       margin-top: 50px;
       margin-bottom: 32px;
-      column-gap: 16px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -63,7 +65,7 @@
   }
 
   &-btn {
-    margin-top: 32px;
+    margin: 32px auto 0;
 
     @media screen and (min-width: 768px) {
       margin-top: 50px;

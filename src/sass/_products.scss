@@ -1,6 +1,9 @@
 .products {
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+    }
   }
   &__list {
     display: flex;
