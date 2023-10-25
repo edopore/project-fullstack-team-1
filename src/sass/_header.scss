@@ -81,6 +81,17 @@
     top: 8px;
   }
 }
+.social__link {
+  fill: $bg-main;
+  stroke: $black;
+  &:hover {
+    stroke: $accent;
+  }
+  &--wh-transparent {
+    fill: transparent;
+    stroke: $white;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .network__logo {
@@ -126,13 +137,6 @@
     &:focus-visible,
     &:focus-within {
       color: $accent;
-    }
-  }
-  .social__link {
-    fill: $bg-main;
-    stroke: $black;
-    &:hover {
-      stroke: $accent;
     }
   }
 }
